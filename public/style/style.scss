@@ -4,20 +4,34 @@
     border: 0;
 }
 
-@mixin fonts($size, $weight) {
+$bluenavegacao: rgb(35, 35, 168);
+
+@mixin fonts($size, $weight, $color) {
     font-family: cursive;
     font-size: $size;
     font-weight: $weight;
+    color: $color;
+}
+
+#btnInsertProduct{
+    background-color: $bluenavegacao;
+    @include fonts(20px, 900, white);
+
+    &:hover {
+        background-color: whitesmoke;
+        border: 2px solid $bluenavegacao;
+        @include fonts(20px, 900, black);
+    }
 }
 
 .navegacao {
-    @include fonts(20px, 900);
-    color: white;
+    @include fonts(20px, 900, white);
+    background-color: $bluenavegacao;
 }
 
 .products {
-    padding: 4px;
-    @include fonts(16px,800);
+    padding: 10px;
+    @include fonts(14px,800, black);
 }
 
 .productsHtml {
@@ -28,8 +42,7 @@
 
 label {
     padding-top: 10px;
-    color: black;
-    @include fonts(16px, 900);
+    @include fonts(16px, 900, black);
 }
 
 .texto-input {
@@ -37,7 +50,7 @@ label {
     width: 100px;
     margin: 4px auto;
     text-align: center;
-    @include fonts(15px, 600);
+    @include fonts(15px, 600, black);
 }
 
 .perishable {

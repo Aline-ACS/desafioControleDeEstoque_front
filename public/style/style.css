@@ -4,18 +4,37 @@
   border: 0;
 }
 
-.navegacao {
+#btnInsertProduct {
+  background-color: #2323a8;
   font-family: cursive;
   font-size: 20px;
   font-weight: 900;
   color: white;
 }
 
-.products {
-  padding: 4px;
+#btnInsertProduct:hover {
+  background-color: whitesmoke;
+  border: 2px solid #2323a8;
   font-family: cursive;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+
+.navegacao {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  background-color: #2323a8;
+}
+
+.products {
+  padding: 10px;
+  font-family: cursive;
+  font-size: 14px;
   font-weight: 800;
+  color: black;
 }
 
 .productsHtml {
@@ -31,10 +50,10 @@
 
 label {
   padding-top: 10px;
-  color: black;
   font-family: cursive;
   font-size: 16px;
   font-weight: 900;
+  color: black;
 }
 
 .texto-input {
@@ -45,6 +64,7 @@ label {
   font-family: cursive;
   font-size: 15px;
   font-weight: 600;
+  color: black;
 }
 
 .perishable {

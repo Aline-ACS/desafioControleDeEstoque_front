@@ -62,7 +62,7 @@ class Product {
     layoutProduct(name, brand, quantity, perishable, id) {
         return `
              <div class="products">
-                 <div class="border border-dark rounded text-dark card mb-3">
+                 <div class="border border-dark rounded card mb-3">
                     <ul class="list-group list-group-flush">
                          <div class="card-header"> Produto: ${name}</div>
                          <li class="list-group-item">Marca: ${brand}</li>

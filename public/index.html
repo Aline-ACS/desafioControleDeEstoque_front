@@ -9,8 +9,8 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar bg-dark">
-        <span class="navbar-brand navegacao ml-5">Controle de Estoque</span>
+    <nav class="navbar navegacao">
+        <span class="navbar-brand ml-5">Controle de Estoque</span>
     </nav>
     <div class="back-controle">
         <form>
@@ -27,7 +27,7 @@
                     <label for="txtQtd"> Quantidade </label>
                     <input class="form-control mb-2 texto-input" type="number" id="txtQtd">
                 </div>
-                <div class="col-auto">
+                <div class="col-auto mb-4">
                     <label> Perecível?
                         <input type="checkbox" id="perishable" class="form-check-input perishable">
                     </label>
@@ -35,21 +35,21 @@
                 </div>
             </div>
             <br>
-            <button type="submit" id="btnInsertProduct" class="btn btn-dark btn-lg btn-block">Inserir Produto</button>
+            <button type="submit" id="btnInsertProduct" class="btn btn-lg btn-block">Inserir Produto</button>
         </form>
     </div>
     <br><br>
-    <div class="container">
+    <div >
         <div class="productsHtml" id="productBoard"></div>
     </div>
 
     <div class="modal fade" id="modalProduct" tabindex="-1" role="dialog" aria-labelledby="modalProduct" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header  navegacao">
                     <h5 class="modal-title" id="modalProduct">Editar dados do produto</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true" style="color: white;">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -76,7 +76,7 @@
                 </div>
                 <div class="modal-footer"> 
                     <button type="button" class="btn btn-primary" id="btnUpdateProduct">Salvar alterações</button>
-                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="submit" class="btn btn-dark" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
