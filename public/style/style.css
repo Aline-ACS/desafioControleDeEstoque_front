@@ -5,7 +5,7 @@
 }
 
 #btnInsertProduct {
-  background-color: #2323a8;
+  background-color: #187439;
   font-family: cursive;
   font-size: 20px;
   font-weight: 900;
@@ -14,7 +14,7 @@
 
 #btnInsertProduct:hover {
   background-color: whitesmoke;
-  border: 2px solid #2323a8;
+  border: 2px solid #187439;
   font-family: cursive;
   font-size: 20px;
   font-weight: 900;
@@ -26,11 +26,11 @@
   font-size: 20px;
   font-weight: 900;
   color: white;
-  background-color: #2323a8;
+  background-color: #187439;
 }
 
 .products {
-  padding: 10px;
+  padding: 8px;
   font-family: cursive;
   font-size: 14px;
   font-weight: 800;

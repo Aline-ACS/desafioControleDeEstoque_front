@@ -4,7 +4,7 @@
     border: 0;
 }
 
-$bluenavegacao: rgb(35, 35, 168);
+$bluenavegacao: rgb(24, 116, 57);
 
 @mixin fonts($size, $weight, $color) {
     font-family: cursive;
@@ -30,7 +30,7 @@ $bluenavegacao: rgb(35, 35, 168);
 }
 
 .products {
-    padding: 10px;
+    padding: 8px;
     @include fonts(14px,800, black);
 }
 
