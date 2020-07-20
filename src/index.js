@@ -59,21 +59,55 @@ class Product {
         })
     }
 
+    // layoutProduct(name, brand, quantity, perishable, id) {
+    //     return `
+    //          <div class="products">
+    //              <div class="border border-dark rounded card mb-3">
+    //                 <ul class="list-group list-group-flush">
+    //                      <div class="card-header"> Produto: ${name}</div>
+    //                      <li class="list-group-item">Marca: ${brand}</li>
+    //                      <li class="list-group-item">Quantidade: ${quantity}</li>
+    //                      <li class="list-group-item">Perecível:${perishable}</li>
+    //                      <button type="button" class="btn btn-outline-danger deleteProduct" id="${id}">Excluir</button>
+    //                      <button type="button" class="btn btn-outline-success getProduct" id="${id}" data-toggle="modal" data-target="#modalProduct">Editar</button>
+    //                 </ul>
+    //              </div>
+    //          </div>
+    //     `; 
+    // }
+
     layoutProduct(name, brand, quantity, perishable, id) {
-        return `
-             <div class="products">
-                 <div class="border border-dark rounded card mb-3">
-                    <ul class="list-group list-group-flush">
-                         <div class="card-header"> Produto: ${name}</div>
-                         <li class="list-group-item">Marca: ${brand}</li>
-                         <li class="list-group-item">Quantidade: ${quantity}</li>
-                         <li class="list-group-item">Perecível:${perishable}</li>
-                         <button type="button" class="btn btn-outline-danger deleteProduct" id="${id}">Excluir</button>
-                         <button type="button" class="btn btn-outline-success getProduct" id="${id}" data-toggle="modal" data-target="#modalProduct">Editar</button>
-                    </ul>
-                 </div>
-             </div>
-        `; 
+       if(perishable === true) {
+            return `
+            <div class="products">
+                <div class="border border-dark rounded card mb-3">
+                <ul class="list-group list-group-flush">
+                        <div class="card-header"> Produto: ${name}</div>
+                        <li class="list-group-item">Marca: ${brand}</li>
+                        <li class="list-group-item">Quantidade: ${quantity}</li>
+                        <li class="list-group-item">Perecível: Sim </li>
+                        <button type="button" class="btn btn-outline-danger deleteProduct" id="${id}">Excluir</button>
+                        <button type="button" class="btn btn-outline-success getProduct" id="${id}" data-toggle="modal" data-target="#modalProduct">Editar</button>
+                </ul>
+                </div>
+            </div>
+            `; 
+       } else {
+            return `
+            <div class="products">
+                <div class="border border-dark rounded card mb-3">
+                <ul class="list-group list-group-flush">
+                        <div class="card-header"> Produto: ${name}</div>
+                        <li class="list-group-item">Marca: ${brand}</li>
+                        <li class="list-group-item">Quantidade: ${quantity}</li>
+                        <li class="list-group-item">Perecível: Não </li>
+                        <button type="button" class="btn btn-outline-danger deleteProduct" id="${id}">Excluir</button>
+                        <button type="button" class="btn btn-outline-success getProduct" id="${id}" data-toggle="modal" data-target="#modalProduct">Editar</button>
+                </ul>
+                </div>
+            </div>
+            `; 
+       }
     }
 
     validateProduct(event) {
