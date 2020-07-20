@@ -1,0 +1,27 @@
+{
+  "name": "desafioControleDeEstoque_front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Aline-ACS/desafioControleDeEstoque_front.git",
+  "author": "Aline-Acs <aline_capoani@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build-dev": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0"
+  }
+}

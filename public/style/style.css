@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.navegacao {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+}
+
+.products {
+  padding: 4px;
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.productsHtml {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  padding-top: 10px;
+  color: black;
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.texto-input {
+  padding: 0.5px;
+  width: 100px;
+  margin: 4px auto;
+  text-align: center;
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.perishable {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
