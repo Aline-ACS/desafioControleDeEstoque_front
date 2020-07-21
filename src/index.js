@@ -136,6 +136,7 @@ class Product {
         .then((result) => {
             const html = this.layoutProduct(products.name, products.brand, products.quantity, products.perishable);
             this.insertHtmlProduct(html);
+            window.location.reload();
         })
         .catch((error) => {
             console.log(error);
@@ -145,7 +146,8 @@ class Product {
     deleteProduct(id) {
         axios.delete(`http://localhost:3000/products/${id}`)
         .then((result) => {
-            alert(result.data.result)
+            alert(result.data.result);
+            window.location.reload();
         })
         .catch((error) => {
             console.log(error)
@@ -162,6 +164,7 @@ class Product {
         axios.put(`http://localhost:3000/products/${id}`, editProduct)
         .then((response) => {
             console.log(response);
+            window.location.reload();
         })
         .catch((error) => {
             console.log(error);
