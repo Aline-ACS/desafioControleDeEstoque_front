@@ -4,6 +4,10 @@
     border: 0;
 }
 
+body { 
+    overflow-x: hidden;
+}
+
 $bluenavegacao: rgb(24, 116, 57);
 
 @mixin fonts($size, $weight, $color) {

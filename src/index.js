@@ -84,7 +84,7 @@ class Product {
         `; 
      }
 
-    validateProduct(event) {
+     validateProduct(event) {
         event.preventDefault();
         if(this.name.value && this.brand.value && this.quantity.value) {
             const products = {
@@ -93,11 +93,17 @@ class Product {
                 quantity: this.quantity.value,
                 perishable: this.perishable.checked
             } 
+            Swal.fire({
+                position: 'top-center',
+                icon: 'success',
+                title: 'Produto adicionado ao estoque!',
+                showConfirmButton: false,
+                timer: 2500
+            })
             this.createProduct(products);
-            alert('Produto adicionado ao estoque!');
 
         } else {
-            alert('Preencha todos as informações!');
+            Swal.fire('Preencha todas as informações!')
         }
     }
 
@@ -110,7 +116,9 @@ class Product {
         .then((result) => {
             const html = this.layoutProduct(products.name, products.brand, products.quantity, products.perishable);
             this.insertHtmlProduct(html);
-            window.location.reload();
+            let reloadPage = setTimeout(function() {
+                window.location.reload();
+            }, 1000)  
         })
         .catch((error) => {
             console.log(error);
@@ -120,8 +128,16 @@ class Product {
     deleteProduct(id) {
         axios.delete(`http://localhost:3000/products/${id}`)
         .then((result) => {
-            alert(result.data.result);
-            window.location.reload();
+            Swal.fire({
+                position: 'top-center',
+                icon: 'error',
+                title: 'Produto excluído do estoque!',
+                showConfirmButton: false,
+                timer: 2500
+            })
+            let reloadPage = setTimeout(function() {
+                window.location.reload();
+            }, 2000)
         })
         .catch((error) => {
             console.log(error)

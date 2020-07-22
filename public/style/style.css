@@ -4,6 +4,10 @@
   border: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #btnInsertProduct {
   background-color: #187439;
   font-family: cursive;
