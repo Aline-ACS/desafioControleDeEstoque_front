@@ -17,7 +17,7 @@ body {
 }
 
 #btnInsertProduct:hover {
-  background-color: whitesmoke;
+  background-color: white;
   border: 2px solid #187439;
   font-family: cursive;
   font-size: 20px;

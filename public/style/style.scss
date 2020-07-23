@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-$bluenavegacao: rgb(24, 116, 57);
+$navegacao: rgb(24, 116, 57);
 
 @mixin fonts($size, $weight, $color) {
     font-family: cursive;
@@ -18,19 +18,19 @@ $bluenavegacao: rgb(24, 116, 57);
 }
 
 #btnInsertProduct{
-    background-color: $bluenavegacao;
+    background-color: $navegacao;
     @include fonts(20px, 900, white);
 
     &:hover {
-        background-color: whitesmoke;
-        border: 2px solid $bluenavegacao;
+        background-color: white;
+        border: 2px solid $navegacao;
         @include fonts(20px, 900, black);
     }
 }
 
 .navegacao {
     @include fonts(20px, 900, white);
-    background-color: $bluenavegacao;
+    background-color: $navegacao;
 }
 
 .products {
